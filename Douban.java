@@ -16,7 +16,7 @@ public class Douban {
 	            .get();
 	    
 	    if (document != null) {
-	        Element element = ((Element) document).select(".info h1").first();
+	        Element element = document.select(".info h1").first();
 	        if (element == null) {
 	            System.out.println("Not Found User");
 	            return;
